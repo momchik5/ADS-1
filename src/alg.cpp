@@ -13,8 +13,8 @@ bool checkPrime(uint64_t value) {
 }
 uint64_t nPrime(uint64_t n) {
     uint64_t count = 0;
-    uint64_t value=1 ;
-    while (count<n) {
+    uint64_t value = 1;
+    while (count < n) {
         value++;
         if (checkPrime(value)) {
             count++;
@@ -31,8 +31,8 @@ uint64_t nextPrime(uint64_t value) {
     }
     return value;
 }
-uint64_t sumPrime(uint64_t hbound) {
-   uint64_t sum = 0;
+uint64_t SumPrime(uint64_t hbound) {
+    uint64_t sum = 0;
     for (uint64_t y = 2; y < hbound; y++) {
         if (checkPrime(y)) {
             sum += y;
