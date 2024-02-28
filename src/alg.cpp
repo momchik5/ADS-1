@@ -1,5 +1,6 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
+#include <iostream>
 #include "alg.h"
 
 
@@ -31,7 +32,7 @@ uint64_t nextPrime(uint64_t value) {
     }
     return value;
 }
-uint64_t SumPrime(uint64_t hbound) {
+uint64_t sumPrime(uint64_t hbound) {
     uint64_t sum = 0;
     for (uint64_t y = 2; y < hbound; y++) {
         if (checkPrime(y)) {
